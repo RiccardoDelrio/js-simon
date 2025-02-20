@@ -27,6 +27,7 @@ const timerEl = setInterval(function () {
 }, 1000)
 let userChoise = [];
 let counter
+let numberFind = []
 
 answersForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -41,6 +42,7 @@ answersForm.addEventListener("submit", function (event) {
         if (userChoise.includes(NumberCasual[i])) {
             console.log("incluso");
             counter += 1
+            numberFind.push()
         }
 
     }
