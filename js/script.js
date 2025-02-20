@@ -5,6 +5,7 @@ const answersForm = document.querySelector('#answers-form')
 let timer = 2
 const inputGroup = document.querySelector("#input-group")
 const NumberCasual = []
+const messageEL = document.querySelector("#message")
 for (let i = 0; i < 5; i++) {
     let number = Math.floor((Math.random() * 10) + 1)
     NumberCasual.push(number)
@@ -43,8 +44,9 @@ answersForm.addEventListener("submit", function (event) {
         }
 
     }
-    console.log(counter);
 
+    console.log(counter);
+    messageEL.innerHTML = (counter)
 });
 
 // contronatre i dati di NumberCasual con userChoise
